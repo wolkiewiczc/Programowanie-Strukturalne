@@ -1,0 +1,95 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+
+  PRZYKŁADYOWY WARUNKOWY
+     int x;
+     scanf("%d",&x);
+     if(x<0)
+     {
+         printf("%d",-x);
+     }
+     else
+     {
+         printf("%d",x);
+     }
+
+ SZUKANIE NAJWIĘKSZEJ Z 3 LICZB
+     int a,b,c;         
+     scanf("%d%d%d",&a,&b,&c);
+     if(a>=b&&a>=c)
+     {
+         printf("%d",a);
+     }
+     else if(b>=a&&b>=c)
+     {
+         printf("%d",b);
+     }
+     else if(c>=a&&c>=b)
+     {
+         printf("%d",c);
+     }
+
+  PORÓWNYWANIE WATOSCI BEZWZGLEDNYCH
+     int a,b;
+     scanf("%d%d",&a,&b);
+     if(abs(a)>abs(b))
+     {
+         printf("%d",a);
+     }
+     else
+     {
+         printf("%d",b);
+     }
+
+LICZENIE POLA TROJKATA 
+     printf("Podaj 1 jesli od postawy i wysokosci, podaj 2 jesli od 3 bokow");
+     int W;
+     scanf("%d",&W);
+     if(W==1)
+     {
+         float a,h;
+         scanf("%f%f",&a,&h);
+         printf("%f",(a*h)/2.);
+     }
+     else if(W==2)
+     {
+         int a,b,c;
+         scanf("%d%d%d",&a,&b,&c);
+         int obw=(a+b+c)/2.;
+         int p = sqrt(obw*(obw-a)*(obw-b)*(obw-c));
+         printf("%d",p);
+     }
+
+  ROZWIĄZYWANIE UKŁADU CRAMERA
+     int a,b,c,d,e,f;
+     scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+     printf("zdefiniowales uklad rownan\n");
+     printf("%dx+%dy=%d\n",a,b,c);
+     printf("%dx+%dy=%d",d,e,f);
+     int W= a*e-b*d;
+     int wx = c*e-b*f;
+     int wy = a*f-c*d;
+     if(W==0)
+     {
+         if(wx==0&&wy==0)
+         {
+             printf("uklad ma nieskonczenie wiele rozwiazan");
+         }
+         else
+         {
+             printf("uklad nie ma rozwiazania");
+         }
+     }
+     else
+     {
+         int x = wx/W;
+         int y = wy/W;
+         scanf("%f%f",&x,&y);
+         printf("x=%f",x);
+         printf("y=%f",y);
+     }
+
+}
