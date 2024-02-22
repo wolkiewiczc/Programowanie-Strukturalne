@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    printf("Napis zawierajacy /n rozne dziwne znaczki \// \\ $ & %%");
+    
+
+     int liczba;
+     scanf("%d",&liczba);
+     printf("Ta liczba to%d",liczba);                       INT
+
+     float liczba;
+     scanf("%f",&liczba);
+     printf("Ta liczba to %.2f", liczba);                   FLOAT
+
+     double liczba;
+     scanf("%lf",&liczba);
+     printf("Ta liczba to %lf", liczba);                   DLUGI FLOAT
+
+     int a,b,c;
+     scanf("%d%d%d",&a,&b,&c);
+     printf("%d\n%d\n%d",a,b,c);                           WYSWIETLANIE WIELOKROTNE
+
+     int liczba;
+     scanf("%d",&liczba);
+     printf("%d",liczba+1);                               DODAWANIE
+
+     int a,b,c;
+     scanf("%d%d%d",&a,&b,&c);
+     printf("%f",(float)(a+b+c)/3);                        ŚREDNIA
+     
+     float x;
+     scanf("%f",&x);
+     printf("ta liczba to %f",sqrt(x));                    PIERWIASTEK
+
+     float x;
+     scanf("%f",&x);
+     printf("ta liczba to %f",fabs(x));                     WARTOSC BEZWZGLĘDNA
+
+     float x;
+     scanf("%f",&x);
+     printf("ta liczba to %e",(x));                         notacja e    5.400+e002 = 540
+
+}
