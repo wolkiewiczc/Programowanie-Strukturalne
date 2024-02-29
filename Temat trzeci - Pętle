@@ -1,0 +1,116 @@
+PĘTLA DZIAŁA NA ZASADZIE
+for([OD];[DO];[Co ile])
+
+
+int main()
+{
+PRZYKLADOWA PĘTLA
+     int n,m;
+     scanf("%d%d",&n,&m);
+     int i;
+     for(i=n;i<m;i=i+n)
+     {
+         printf("hehe \n");
+     }
+PĘTLA KLASYCZNA - CO JEDEN PARAMETR
+     int n,m;
+     scanf("%d%d",&n,&m);
+     int i;
+     for(i=1;i<m;i++)
+     {
+         printf(i*n);
+     }
+TRZY ZMIENNE
+     int n,m,k;
+     scanf("%d%d%d",&n,&m,&k);
+     int i;
+     for(i=m;i<=k;i++)
+     {
+         if(i%n==0)
+         printf("%d \n",i);
+     }
+
+    int n,m,k;
+     scanf("%d%d%d",&n,&m,&k);
+     int i;
+     for(i=(m/n+1)*n;i<k;i=i+n)
+     {
+         printf("%d \n",i);
+     }
+
+TWORZENIE SILNI W C Z POMOCA PETLI
+    int n;
+     int a=1;
+     scanf("%d",&n);
+     int i;
+     for(i=1;i<=n;i++)
+     {
+         a=a*i;
+         printf("Mnoznik:%d \n %d!=%d \n",i,i,a);
+
+     }
+LICZENIE kwadratów liczb
+    int n;
+     int sum=0;
+     scanf("%d",&n);
+     int i;
+     for(i=1;i<=n;i++)
+     {
+         sum=sum+i*i;
+         printf("Liczba %d do kwadratu %d \nSuma = %d \n",i,i*i,sum);
+         printf("%d^2 + %d=%d \n",i,sum-i*i,sum);
+     }
+LICZENIE SILNIA SILNIA (SILNIA BIORACA POD UWAGE TYLKO LICZBY PARZYSTE)
+    int n;
+     int sum=1;
+     scanf("%d",&n);
+     int i;
+     for(i=1;i<=n;i++)
+     {
+         if(i%2==0)
+         {
+         sum=sum*i;
+         printf("%d!=%d \n",i,sum);
+         }
+     }
+}
+WYPISYWANIE CIAGU FIBONACIIEGO do n-tego elementu
+     int n;
+     int t=1;
+     scanf("%d",&n);
+     int i;
+     int x=1;
+     int y=1;
+     for(i=1;i<=n;i++)
+     {
+         printf("F%d=%d \n",i,x);
+         t = x;
+         x = y;
+         y = t+y;
+     }
+SZUKANIE NWD - NAJWIEKSZY WSPOLNY DZIELNIK
+    int n,m,min;
+     scanf("%d%d",&n,&m);
+
+    if(n>=m)
+    {
+    min = n;
+    }
+    else
+    {
+    min = m;
+    }
+
+     int i;
+     int x=0;
+     for(i=1;i<=min;i++)
+     {
+            if(n%i==0&&m%i==0)
+            {
+            x = i;
+            }
+
+     }
+     printf("%d",x);
+}
+
