@@ -92,4 +92,34 @@ LICZENIE POLA TROJKATA
          printf("y=%f",y);
      }
 
+POLA 3 RÓZNYCH Z SWITCH CASE 
+ printf("Podaj 1- kwadrat, 2- prostokat, 3- trojkat");
+     int w;
+     scanf("%d",&w);
+     switch(w)
+         {
+
+    case 1:
+    printf("Podaj bok kwadratu =");
+    int a;
+    scanf("%d",&a);
+    printf("Pole kwadratu wynosi %d",a*a);
+    break;
+    case 2:
+    printf("Podaj pierwszy bok prostokata =");
+    int b,d;
+    scanf("%d%d",&d,&b);
+    printf("Pole prostokata wynosi %d",d*b);
+    break;
+    case 3:
+    printf("Podaj bok trojkata =");
+    int c;
+    printf("Podaj wysokosc trojkata =");
+    int h;
+    scanf("%d%d",&c,&h);
+    printf("Pole trojkata wynosi %d",(c*h)/2);
+    break;
+
+
+
 }
