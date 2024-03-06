@@ -112,5 +112,40 @@ SZUKANIE NWD - NAJWIEKSZY WSPOLNY DZIELNIK
 
      }
      printf("%d",x);
+
+XXX Liczba całkowita z pierwiastka N
+     int n;
+     scanf("%d",&n);
+     int i;
+     int w;
+     for(i=1;i<=n/2;i++)
+
+    {
+      if(i*i<=n)
+      {
+        w=i;
+      }
+    }
+        printf("podloga z pierwiastka %d wynosi %d",n,w);
+
+XXX suma ciągu silni
+    int n;
+     scanf("%d",&n);
+     int i;
+     int x;
+     int a;
+     int suma = 0;
+     for(i=1;i<=n;i++)
+     {
+       x = 1;
+       for(a=1;a<=i;a++)
+       {
+         x = x * a;
+       }
+       suma = suma + x;
+     }
+     printf("Wynik to %d",suma);
+
+
 }
 
